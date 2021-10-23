@@ -30,6 +30,26 @@
       flex-direction: column;
       align-items: right;
       margin-bottom: 10px;
+      &:hover .form-field__input,
+      &:focus .form-field__input {
+          border-color: var(--active-link-color);
+      }
+      &:hover .form-field__textarea,
+      &:focus .form-field__textarea {
+          border-color: var(--active-link-color);
+      }
+      &:hover .form-field__icon {
+          fill: var(--active-link-color)
+      }
+      &:focus-within>.form-field__icon {
+          fill: var(--active-link-color);
+      }
+      &:focus-within>.form-field__input {
+          border-color: var(--active-link-co lor);
+      }
+      &:focus-within>.form-field__textarea {
+          border-color: var(--active-link-color);
+      }
   }
   
   .form-field__input {
@@ -44,20 +64,6 @@
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .form-field:hover .form-field__input,
-  .form-field:focus .form-field__input {
-      border-color: var(--active-link-color);
-  }
-  
-  .form-field:hover .form-field__textarea,
-  .form-field:focus .form-field__textarea {
-      border-color: var(--active-link-color);
-  }
-  
-  .form-field:focus-within>.form-field__input {
-      border-color: var(--active-link-co lor);
-  }
-  
   .input-icon {
       display: block;
       position: relative;
@@ -68,19 +74,10 @@
       left: 10px;
       top: 60%;
       transform: translateY(-50%);
-  }
-  
-  .form-field__icon:hover,
-  .form-field__icon:focus {
-      fill: var(--active-link-color);
-  }
-  
-  .form-field:hover .form-field__icon {
-      fill: var(--active-link-color)
-  }
-  
-  .form-field:focus-within>.form-field__icon {
-      fill: var(--active-link-color);
+      &:hover,
+      &:focus {
+          fill: var(--active-link-color);
+      }
   }
   
   .form-field__label {
@@ -104,10 +101,6 @@
       box-sizing: border-box;
       border-radius: 4px;
       margin-bottom: 20px;
-  }
-  
-  .form-field:focus-within>.form-field__textarea {
-      border-color: var(--active-link-color);
   }
   
   textarea {

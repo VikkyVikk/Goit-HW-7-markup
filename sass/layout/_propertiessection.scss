@@ -1,9 +1,8 @@
   .section-properties {
       display: flex;
-  }
-  
-  .section-properties .section-properties__item+.section-properties__item {
-      margin-left: 30px;
+      & .section-properties__item+.section-properties__item {
+          margin-left: 30px;
+      }
   }
   
   .section-properties__item {

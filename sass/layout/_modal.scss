@@ -8,16 +8,14 @@
     opacity: 1;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        & .modal {
+            transform: translate(-50%, -50%) scale(1.1);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
 }
 
 .modal {
@@ -52,9 +50,8 @@
     justify-content: center;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
-}
-
-.modal__icon-close:hover .icon-svg,
-.modal__icon-close:focus .icon-svg {
-    fill: var(--active-link-color);
+    &:hover .icon-svg,
+    &:focus .icon-svg {
+        fill: var(--active-link-color);
+    }
 }
