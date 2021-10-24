@@ -1,5 +1,5 @@
 .footerbg {
-    background: var(--background-dark-color);
+    background: $background-dark-color;
     padding: 60px 0;
 }
 
@@ -23,17 +23,17 @@
 
 .footer--logstudio,
 .footer-address__link--adress {
-    color: var(--main-light-color);
+    color: $main-light-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer--logstudio:hover,
 .footer--logstudio:focus {
-    color: var(--active-link-color);
+    color: $ctive-link-color;
 }
 
 .footer--logstudio:active {
-    color: var(--main-light-color);
+    color: $main-light-color;
 }
 
 .footer-address {
@@ -56,20 +56,20 @@
 }
 
 .footer-address__link--adress {
-    color: var(--main-light-color);
+    color: $main-light-color;
     &:hover,
     &:focus {
-        color: var(--active-link-color);
+        color: $active-link-color;
     }
 }
 
 .footer-address__link {
-    color: var(--contact-color);
+    color: $contact-color;
     &:hover,
     &:focus {
-        color: var(--active-link-color);
+        color: $active-link-color;
     }
     &:active {
-        color: var(--main-light-color);
+        color: $main-light-color;
     }
 }

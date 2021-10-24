@@ -38,11 +38,15 @@
  }
  
  .form-checkbox__input:checked+.form-checkbox__label span {
-     background-color: var(--active-link-color);
+     background-color: $active-link-color;
      border: none;
      padding: 0;
  }
  
+ .checkbox__icon:focus {
+     border-color: $active-link-color;
+ }
+ 
  .agreement {
-     color: var(--active-link-color);
+     color: $active-link-color;
  }

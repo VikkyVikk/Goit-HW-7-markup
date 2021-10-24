@@ -15,7 +15,7 @@
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
-    color: var( --main-dark-color);
+    color: $main-dark-color;
     margin-bottom: 50px;
 }
 
@@ -45,6 +45,6 @@
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: $main-light-color;
     background-color: rgba(47, 48, 58, 0.8);
 }

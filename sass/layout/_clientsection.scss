@@ -8,7 +8,7 @@
      line-height: 1.17;
      text-align: center;
      letter-spacing: 0.03em;
-     color: var( --main-dark-color);
+     color: $main-dark-color;
      margin-bottom: 50px;
  }
  
@@ -29,15 +29,15 @@
      display: flex;
      width: 170px;
      height: 92px;
-     fill: #AFB1B8;
-     border: 1px solid #AFB1B8;
+     fill: $client-item-color-link;
+     border: 1px solid $client-item-color-link;
      border-radius: 4px;
      align-items: center;
      justify-content: center;
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
      &:hover,
      &:focus {
-         border: 1px solid var(--active-link-color);
-         fill: var(--active-link-color);
+         border: 1px solid $active-link-color;
+         fill: $active-link-color;
      }
  }
