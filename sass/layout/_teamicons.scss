@@ -2,7 +2,7 @@
     font-size: 14px;
     line-height: calc(19 / 14);
     text-align: center;
-    color: var(--active-link-color);
+    color: $active-link-color;
     margin-bottom: 30px;
 }
 
@@ -23,24 +23,24 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: var(--main-light-color);
+    background-color: $main-light-color;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        background-color: var(--active-link-color);
+        background-color: $active-link-color;
     }
     &:hover .social-list__icon,
     &:focus .social-list__icon {
-        fill: var(--main-light-color);
+        fill: $main-light-color;
     }
 }
 
 .social-list__icon {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: $client-item-color-link;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

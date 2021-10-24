@@ -3,7 +3,7 @@
         
         .header {
             background: $main-light-color;
-            border: 1px solid #ECECEC;
+            border: 1px solid $border-light-color;
             & .header-container {
                 display: flex;
                 align-items: center;

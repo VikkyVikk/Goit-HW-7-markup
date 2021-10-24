@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+:active,
+:hover,
+:focus {
+    outline: 1px solid $active-link-color;
+    outline-offset: 1px solid $active-link-color;
+}
+
 h1,
 h2,
 h3,
